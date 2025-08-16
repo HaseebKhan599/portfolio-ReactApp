@@ -6,7 +6,7 @@ export default function Projects() {
       title: "PhishFender",
       desc: "Chrome Extension for phishing detection using ML and Python.",
       link: "#",
-      git: "#"
+      git: "https://github.com/HaseebKhan599/PhishFenderProject"
     },
     {
       title: "Portfolio Website",
@@ -30,8 +30,8 @@ export default function Projects() {
           <div key={i} className="p-6 rounded-lg shadow bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700">
             <h3 className="text-xl font-semibold mb-2">{p.title}</h3>
             <p className="text-gray-600 dark:text-gray-300">{p.desc}</p>
-            <a href={p.link} className="text-blue-500 hover:underline mt-2 inline-block">View</a><br/>
-            <a href={p.git} className="text-blue-500 hover:underline mt-2 inline-block">Github Repo</a>
+            {/* <a href={p.link} className="text-blue-500 hover:underline mt-2 inline-block">View</a><br/> */}
+            <a href={p.git} target="_blank" className="text-blue-500 hover:underline mt-2 inline-block">Github Repo</a>
           </div>
         ))}
       </div>
